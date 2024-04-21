@@ -15,11 +15,13 @@ public class app {
         Rettangolo.altezza = scan.nextInt();
         System.out.println("");
         System.out.println("Il rettangolo inserito è : " + Rettangolo.base + "x" + Rettangolo.altezza);
+        Rettangolo.disegnaRettangolo();
         System.out.println("");
         Rettangolo.calcolaPerimetro ();
         Rettangolo.calcolaArea ();
         System.out.println("- end -");
         System.out.println("");
+
     }
 
 }
