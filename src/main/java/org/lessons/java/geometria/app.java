@@ -10,11 +10,10 @@ public class app {
         System.out.println("Inseriamo le dimensioni del rettangolo :");
         Rettangolo myRettangolo = new Rettangolo() ;
         System.out.print("   base : ");
-        Rettangolo.base = scan.nextInt();
+        Rettangolo.base = scan.nextFloat();
          System.out.print("   Altezza : ");
-        Rettangolo.altezza = scan.nextInt();
+        Rettangolo.altezza = scan.nextFloat();
         System.out.println("");
-        System.out.println("Il rettangolo inserito è : " + Rettangolo.base + "x" + Rettangolo.altezza);
         Rettangolo.disegnaRettangolo();
         System.out.println("");
         Rettangolo.calcolaPerimetro ();
