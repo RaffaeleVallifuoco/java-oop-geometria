@@ -3,6 +3,11 @@ package org.lessons.java.geometria;
 public class Rettangolo {
     public static float base;
     public static float altezza;
+    
+    public Rettangolo(float base, float altezza) {
+    	this.base = base ;
+    	this.altezza = altezza ;
+    }
 
     public static void calcolaPerimetro () {
         double perimetro = (base * 2) + (altezza * 2) ;
@@ -24,14 +29,15 @@ public class Rettangolo {
             for (int j = 0; j < base; j++) {
                 if (i == 0 || i == altezza - 1 || j == 0 || j == base - 1) {
                     //non eliminare spazio vuoto !
-                    System.out.print("* ");
+                    System.out.print("*  ");
                 } else {
                     //spazi vuoti ( non eliminare!)
-                    System.out.print("  ");
+                    System.out.print("   ");
                 }
             }
             System.out.println();
         }
         System.out.println("");
-    }    
+    }
+    
 }
