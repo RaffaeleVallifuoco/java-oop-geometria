@@ -10,7 +10,7 @@ public class app {
         System.out.println("Inseriamo le dimensioni del rettangolo :");
         System.out.print("   base : ");
         Rettangolo.base = scan.nextFloat();
-         System.out.print("   Altezza : ");
+        System.out.print("   Altezza : ");
         Rettangolo.altezza = scan.nextFloat();
         System.out.println("");
         Rettangolo myRettangolo = new Rettangolo(Rettangolo.base, Rettangolo.altezza) ;
