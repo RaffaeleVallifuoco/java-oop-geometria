@@ -14,10 +14,10 @@ public class app {
         Rettangolo.altezza = scan.nextFloat();
         System.out.println("");
         Rettangolo myRettangolo = new Rettangolo(Rettangolo.base, Rettangolo.altezza) ;
-        Rettangolo.disegnaRettangolo();
+        myRettangolo.disegnaRettangolo();
         System.out.println("");
-        Rettangolo.calcolaPerimetro ();
-        Rettangolo.calcolaArea ();
+        myRettangolo.calcolaPerimetro ();
+        myRettangolo.calcolaArea ();
         System.out.println("--------------------------------------------------------------");
         System.out.println("- end -");
         System.out.println("");

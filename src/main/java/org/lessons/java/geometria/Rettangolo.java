@@ -9,19 +9,19 @@ public class Rettangolo {
     	this.altezza = altezza ;
     }
 
-    public static void calcolaPerimetro () {
+    public  void calcolaPerimetro () {
         double perimetro = (base * 2) + (altezza * 2) ;
         System.out.println("Il perimetro del rettangolo è : " + perimetro);
         System.out.println("");
     }
 
-    public static void calcolaArea () {
+    public  void calcolaArea () {
         double area = (base * altezza);
         System.out.println("L'area del rettangolo è : " + area);
         System.out.println("");
     }
 
-    public static void disegnaRettangolo () {
+    public void disegnaRettangolo () {
         System.out.println();
         System.out.println("Il rettangolo inserito è : " + Rettangolo.base + " x " + Rettangolo.altezza);
         System.out.println();
