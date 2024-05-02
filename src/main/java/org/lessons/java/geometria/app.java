@@ -9,11 +9,11 @@ public class app {
         System.out.println("--------------------------------------------------------------");
         System.out.println("Inseriamo le dimensioni del rettangolo :");
         System.out.print("   base : ");
-        Rettangolo.base = scan.nextFloat();
+        int base = scan.nextInt();
         System.out.print("   Altezza : ");
-        Rettangolo.altezza = scan.nextFloat();
+        int altezza = scan.nextInt();
         System.out.println("");
-        Rettangolo myRettangolo = new Rettangolo(Rettangolo.base, Rettangolo.altezza) ;
+        Rettangolo myRettangolo = new Rettangolo(base, altezza) ;
         myRettangolo.disegnaRettangolo();
         System.out.println("");
         myRettangolo.calcolaPerimetro ();

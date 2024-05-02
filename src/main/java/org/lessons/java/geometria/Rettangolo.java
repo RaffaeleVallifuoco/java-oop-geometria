@@ -1,29 +1,46 @@
 package org.lessons.java.geometria;
 
 public class Rettangolo {
-    public static float base;
-    public static float altezza;
+    private int base;
+    private int altezza;
     
-    public Rettangolo(float base, float altezza) {
-    	this.base = base ;
-    	this.altezza = altezza ;
+    public void setBase(int base) {
+        this.base = base;
+    }
+
+    public void setAltezza(int altezza) {
+        this.altezza = altezza;
+    }
+
+    public int getBase() {
+        return base;
+    }
+
+    public int getAltezza() {
+        return altezza;
+    }
+
+    
+    public Rettangolo(int insBase, int insAltezza) {
+    	this.base = insBase ;
+    	this.altezza = insAltezza ;
     }
 
     public  void calcolaPerimetro () {
-        double perimetro = (base * 2) + (altezza * 2) ;
+        double perimetro = (this.base + this.altezza) * 2 ;
         System.out.println("Il perimetro del rettangolo è : " + perimetro);
         System.out.println("");
     }
 
     public  void calcolaArea () {
-        double area = (base * altezza);
+        double area = (this.base * this.altezza);
         System.out.println("L'area del rettangolo è : " + area);
         System.out.println("");
     }
 
     public void disegnaRettangolo () {
         System.out.println();
-        System.out.println("Il rettangolo inserito è : " + Rettangolo.base + " x " + Rettangolo.altezza);
+        System.out.println("Il rettangolo inserito è : " + getBase() + " x " + getAltezza());
         System.out.println();
         for (int i = 0; i < altezza; i++) {
             for (int j = 0; j < base; j++) {
